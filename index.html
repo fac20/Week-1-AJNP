@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <title>Hire A Superhero!</title>
     <link href='style.css' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
@@ -11,29 +11,38 @@
     <script src="https://code.iconify.design/1/1.0.5/iconify.min.js"></script>
 
 </head>
+<div>
 <body>
-    <header>
+    <header >
     
-        <nav >
+        <nav id="agency-name" >
             <ul class="nav">
-                <li>
                     <button id="button" >&#9733;</button>
+                <li class="nav-link">
+                    <a href="#agency-name">
+                        <img src="images/Superman_S_symbol.svg" alt="logo click for home">
+                    </a>
                 </li>
-                <li class="nav-link"><a href="#intro">
-                    <img src="Superman_S_symbol.svg" alt="logo click for home">
-                </a></li>
                 <li class="nav-link"><a href="#intro"> Hire a Hero </a></li>
                 <li class="nav-link"><a href="#the-team"> Meet the team </a></li>
                 <li class="nav-link"><a href="#contact"> Contact </a></li>
             </ul>
         </nav> 
+
     </header>
 
     <main>
 
         <section id="intro">
             <h1>Hire a Hero</h1>
-            <article>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</article>
+            <article>
+                <p>We have been the galaxy's leading superhero-for-hire agency for over 500,000 years. We pride ourselves in having only the most rigorously vetted,
+                    morally infallible beings that exist. Our heroes are experienced in closequarters combat, hacking, extraction, espionage and a range of military grade 
+                    tools and weapons.
+    
+                    Our heroes are up for any task! Take a look at our team's special abilities and choose which one suits you, otherwise get in contact with your 
+                    needs and we will assign the best hero for the job.</p>                
+            </article>
         </section>
 
         <section id="the-team">
@@ -49,8 +58,8 @@
                     <li>Never procrastinates</li>
                     <li>Can snack and not put on weight</li>
                 </ul>
-            <h4>Origin Story</h4>
-            <p>Swallowed a four-leaf clover as a kid.</p>
+                <h4>Origin Story</h4>
+                    <p>Swallowed a four-leaf clover as a kid.</p>
                 <ul class="links">
                     <li><a href="https://github.com/Netceer" target="blank"><i class="fab fa-github"></i></a></li>
 					<li><a href="https://www.codewars.com/users/Netceer" target="blank"><iconify-icon data-icon="simple-icons:codewars" data-width="32px" data-height="32px"></iconify-icon></a></li>
@@ -110,7 +119,7 @@
                         <li>Can also cure those with cold feet!</li>
                     </ul>
                 <h4>Origin Story</h4>
-                    <p>Can shoot fire from eyes after using a poisoned mascara found in an abandoned warehouse!</p>
+                    <p>Started to shoot fire from eyes after using a poisoned mascara found in an abandoned warehouse!</p>
                 <ul class="links">
                     <li><a href="https://github.com/jessica440" target="blank"><i class="fab fa-github"></i></a></li>
 					<li><a href="https://www.codewars.com/users/jessica440" target="blank"><iconify-icon data-icon="simple-icons:codewars" data-width="32px" data-height="32px"></iconify-icon></a></li>
@@ -127,30 +136,33 @@
  
             <form class="contactForm">
                 <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Name" size="50" required><br>
+                <input type="text" id="name" placeholder="Name" required>
                 <label for="email">Email</label>
-                <input type="email" id="email" placeholder="email" size="50" required><br>
+                <input type="email" id="email" placeholder="email" required>
                 <label for="message">Message</label>
-                <textarea id="message" cols="61" rows="10" placeholder="Enter message here!" required></textarea><br>
+                <textarea id="message"  placeholder="Enter message here!" required></textarea>
                 <input type="submit" id="submit">
             </form>
 
         </section>
         
     </main>
-    
-<script>
-    const links = [...document.getElementsByClassName("nav-link")]
-    const button = document.getElementById("button");
 
-    function menu() {
-        console.log("hello")
-    links.map((link) => {
-        link.classList.toggle("visible")
-    })
-}
+    <footer>
+        <p>Copyright @ 2020 Superheroes</p>        
+    </footer>
+</div>
+    <script>
+        const links = [...document.getElementsByClassName("nav-link")]
+        const button = document.getElementById("button");
 
-button.addEventListener("click", () => menu())
+        function menu() {
+            links.map((link) => {
+            link.classList.toggle("visible")
+            })
+        }
+
+        button.addEventListener("click", () => menu())
 
     </script>
 
