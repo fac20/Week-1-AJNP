@@ -1,3 +1,70 @@
+
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: hsl(251, 93%, 30%);
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+   
+    
+}
+
+li {
+    list-style-type: none;
+}
+
+
+.nav-link {
+    padding: 0.5rem;
+    border: solid transparent 1px;
+}
+
+#button {
+    display: none;
+}
+
+.nav-link:hover {
+    background-color: hsl(251, 93%, 55%);
+    border: solid white 1px;
+}
+
+a {
+    text-decoration: none;
+    font-family: Helvetica;
+    font-size: 1.3rem;
+    color: hsl(82, 100%, 50%);
+    padding: 1rem;
+}
+
+a img {
+    width: 5rem;
+}
+
+
+
+@media only screen and (max-width: 750px) {
+
+    .nav {
+        flex-direction: column;
+    }
+    
+    #button {
+    display: block;
+    }
+
+    .nav-link {
+    display: none;
+    }
+}
+
+
+.visible {
+    display: block;
+}
+
 #the-team {
     max-width: 1600px;
     margin: auto;

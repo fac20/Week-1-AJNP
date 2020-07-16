@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0">
     <title>Hire A Superhero!</title>
     <link href='style.css' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
@@ -13,12 +13,18 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li class=""><a href=""></a></li>
-                <li class=""><a href=""></a></li>
-                <li class=""><a href=""></a></li>
-
+        <nav >
+           
+            <ul class="nav">
+                <li>
+                    <button id="button" >&#9733;</button>
+                </li>
+                <li class="nav-link"><a href="#intro">
+                    <img src="Superman_S_symbol.svg" alt="logo click for home">
+                </a></li>
+                <li class="nav-link"><a href="#intro"> Hire a Hero </a></li>
+                <li class="nav-link"><a href="#the-team"> Meet the team </a></li>
+                <li class="nav-link"><a href="#contact"> Contact </a></li>
             </ul>
         </nav> 
     </header>
@@ -26,7 +32,7 @@
     <main>
 
         <section id="intro">
-
+     
         </section>
 
         <section id="the-team">
@@ -115,6 +121,7 @@
         </section>
 
         <section id="contact">
+ 
             <form>
 
             </form>
@@ -123,5 +130,20 @@
         
     </main>
     
+<script>
+    const links = [...document.getElementsByClassName("nav-link")]
+    const button = document.getElementById("button");
+
+    function menu() {
+        console.log("hello")
+    links.map((link) => {
+        link.classList.toggle("visible")
+    })
+}
+
+button.addEventListener("click", () => menu())
+
+    </script>
+
 </body>
 </html>
