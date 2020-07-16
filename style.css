@@ -187,3 +187,38 @@ article p {
 .links a {
     color: black;
 }
+
+.contactForm {
+    width: 80%;
+    margin: 50px auto;
+}
+
+label, input {
+    font-size: 1.3rem;
+    margin: 10px auto 40px;
+
+    
+}
+
+textarea {
+    vertical-align: top;
+    margin: 10px auto 40px;
+    font-size: 1.3rem;
+}
+
+#contact {
+    /* background-image: linear-gradient(to right, aquamarine, pink, pink); 
+    border-bottom: 40rem solid transparent;
+    border-left: 10rem solid pink;
+    border-right: 20rem solid pink;
+    border-top: 40rem solid pink; */
+    /* position: absolute; */
+    height: 0;
+    width: 80%;  
+}
+
+#contact h2 {
+    text-align: center;
+    padding: 90px;
+    font-size: 3rem;
+}
